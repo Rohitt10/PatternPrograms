@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Pattern36
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter odd number:  ");
+		int n=sc.nextInt();
+		for(int i=0,k=0;i<n;i+=2,k++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if(j>=n/2-k && j<=n/2+k)
+					System.out.print(i+1);
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+}
